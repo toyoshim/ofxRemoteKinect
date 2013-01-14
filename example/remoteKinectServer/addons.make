@@ -1,0 +1,5 @@
+ofxXmlSettings
+ofxControlPanel
+ofxKinect
+ofxRemoteKinect
+ofxZmq
