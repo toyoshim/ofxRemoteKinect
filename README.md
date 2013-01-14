@@ -2,6 +2,8 @@ ofxRemoteKinect
 ===============
 Copyright © 2013 Takashi Toyoshima <toyoshim@gmail.com>. See also LICENSE.txt.
 
+![image](https://raw.github.com/toyoshim/ofxRemoteKinect/773ef20644f97baa226b373ab1b4147a29a34ad9/images/screen0.jpg)
+
 Description
 -----------
 ofxRemoteKinect is an openFrameworks addon for using Xbox Kinect via network.
@@ -30,7 +32,9 @@ Installation
 To use ofxRemoteKinect, checkout this repositry in addition to openFrameworks
 and dependent addons.
 
-`git clone https://github.com/toyoshim/ofxRemoteKinect.git`
+````
+git clone https://github.com/toyoshim/ofxRemoteKinect.git
+````
 
 The addon should sit in `openFrameworks/addons/ofxRemoteKinect/`.
 
