@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>ofxRemoteKinect by toyoshim</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>ofxRemoteKinect</h1>
+        <h2>Let's control your kinect via network</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/toyoshim/ofxRemoteKinect/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/toyoshim/ofxRemoteKinect/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/toyoshim/ofxRemoteKinect" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>ofxRemoteKinect</h1>
+
+<p>Copyright © 2013 Takashi Toyoshima <a href="mailto:toyoshim@gmail.com">toyoshim@gmail.com</a>. See also LICENSE.txt.</p>
+
+<h2>Description</h2>
+
+<p>ofxRemoteKinect is an openFrameworks addon for using Xbox Kinect via network.</p>
+
+<p>Usually, Kinect is connected to the PC via USB. As a result, it's too difficult
+to extend cable length in a reliable way with reasonable cost. But this addon
+make it possible to use Kinect remotely. Kinect is connected to a server PC via
+USB. The server runs a service program to pass the Kinect data to a client PC
+via TCP/IP. LAN is easy to use in the distance. Of couse, you can use it via
+Wifi network. Also you can use it via the internet with acceptable latency.</p>
+
+<h2>Dependency</h2>
+
+<p>ofxRemoteKinect depends on some other addons.</p>
+
+<ul>
+<li>
+<a href="https://github.com/satoruhiga/ofxZmq">ofxZmq</a>
+commit affab2a0ff02f660042e08b75e318fa4cdb4bb4d</li>
+<li>
+<a href="https://github.com/ofTheo/ofxKinect">ofxKinect</a>
+commit eb06686cbc5d38a07fcf24817ad9e73031f6a4b7</li>
+<li>
+<a href="https://github.com/kylemcdonald/ofxControlPanel">ofxControlPanel</a>
+commit 98697f40b0dfa423689d9360d04cfb026de5d7c8</li>
+<li>ofxXmlSettings openFrameworks 0073 includes</li>
+</ul><h2>Installation</h2>
+
+<p>To use ofxRemoteKinect, checkout this repositry in addition to openFrameworks
+and dependent addons.</p>
+
+<pre><code>git clone https://github.com/toyoshim/ofxRemoteKinect.git
+</code></pre>
+
+<p>The addon should sit in <code>openFrameworks/addons/ofxRemoteKinect/</code>.</p>
+
+<h2>Example Projects</h2>
+
+<p>Two example projects exists in the <code>example</code> folder.</p>
+
+<h3>remoteKinectServer</h3>
+
+<p>This is a reference server implementation. You may want to use it as is. If you
+want to listen at different ports, you can change it by editing port numbers
+in main.cpp.</p>
+
+<h3>remoteKinectClient</h3>
+
+<p>This is an example client. Also you can change the server address by editing
+server and port description written in main.cpp.</p>
+
+<p>This example use ofxRemoteKinectClient class to control kinect configurations
+and get the latest screen information. This class provide functions to control
+near and far clipping parameters for depth information, tilt angle, and JPEG
+compression quality which is used to transfer screen information. Also it
+provide remote kinect screen information as ofTexture, ofPixels, and direct
+pointers to buffer memories as ofxKinect does.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
